@@ -1,7 +1,8 @@
 package main
 
-import "github.com/go-recipes/mean"
+import "github.com/go-recipes/basics"
 
 func main() {
-	mean.TestMean()
+	basics.TestMean()
+	basics.TestMedian()
 }
