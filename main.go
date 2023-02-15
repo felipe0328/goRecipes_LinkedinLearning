@@ -7,4 +7,5 @@ func main() {
 	basics.TestMedian()
 	basics.TestFrequency()
 	basics.TestError()
+	basics.TestDefer()
 }
