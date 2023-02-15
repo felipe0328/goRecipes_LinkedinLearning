@@ -11,7 +11,7 @@ func testFrequency() {
 
 	result := frequency(testString)
 
-	fmt.Println("The frecuency of the text: ", testString, "is ", result)
+	fmt.Println("The frequency of the text: ", testString, "is ", result)
 }
 
 func frequency(input string) map[string]int {

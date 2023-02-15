@@ -26,7 +26,7 @@ func median(numbers []float64) float64 {
 	}
 
 	if len(numbers) == 1 {
-		return float64(numbers[0])
+		return numbers[0]
 	}
 
 	// first we sort the input list
