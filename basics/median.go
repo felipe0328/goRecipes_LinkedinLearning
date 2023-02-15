@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func TestMedian() {
+func testMedian() {
 	numbers := []float64{1, 2, 3, 4, 5, 6}
 	sortedResult := median(numbers)
 

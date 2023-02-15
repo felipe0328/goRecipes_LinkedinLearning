@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func TestFrequency() {
+func testFrequency() {
 	testString := "To be, or not to be. In this be world of world to."
 
 	result := frequency(testString)
@@ -17,11 +17,11 @@ func TestFrequency() {
 func frequency(input string) map[string]int {
 	result := make(map[string]int)
 
-	splittedString := strings.Split(input, " ")
+	splitString := strings.Split(input, " ")
 
 	regexExpression := regexp.MustCompile(`\W`)
 
-	for _, data := range splittedString {
+	for _, data := range splitString {
 		fixedData := strings.ToLower(data)
 		fixedData = regexExpression.ReplaceAllString(fixedData, "")
 

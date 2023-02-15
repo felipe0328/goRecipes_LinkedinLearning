@@ -2,7 +2,7 @@ package basics
 
 import "fmt"
 
-func TestMean() {
+func testMean() {
 	listOfNumbers := []int{1, 2, 3, 4, 5}
 	fmt.Println("Mean of numbers: ", listOfNumbers, " is: ", mean(listOfNumbers))
 }

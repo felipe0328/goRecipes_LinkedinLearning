@@ -10,8 +10,8 @@ var (
 	errorNotEmpty = errors.New("the input is not empty")
 )
 
-// This is a simple test of an error handling
-func TestError() {
+// testError This is a simple test of an error handling
+func testError() {
 	emptyError := errorCreator("")
 	notEmptyError := errorCreator("something")
 	nilError := errorCreator("safeWord")
