@@ -12,7 +12,11 @@ var (
 
 // This is a simple test of an error handling
 func TestError() {
-	fmt.Println("Test Error if empty ", errorCreator(""), " if not empty ", errorCreator("something"), " and nil when ok: ", errorCreator("safeWord"))
+	emptyError := errorCreator("")
+	notEmptyError := errorCreator("something")
+	nilError := errorCreator("safeWord")
+
+	fmt.Println("Test Error if empty: ", errorHandler(emptyError), " - if not empty: ", errorHandler(notEmptyError), " - and nil when ok: ", errorHandler(nilError))
 }
 
 func errorCreator(input string) error {
@@ -25,4 +29,15 @@ func errorCreator(input string) error {
 	}
 
 	return errorNotEmpty
+}
+
+func errorHandler(err error) string {
+	switch err {
+	case errorEmpty:
+		return "handling if empty"
+	case errorNotEmpty:
+		return "handling when not empty"
+	default:
+		return "everything is ok"
+	}
 }
