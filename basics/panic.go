@@ -4,7 +4,7 @@ import "fmt"
 
 func testPanic() {
 	inputArray := []int{1}
-	fmt.Println("The recover returned the folowing error: ", runMethodSafe(getArrayLenMinusTwoValue, inputArray))
+	fmt.Println("The recover returned the following error: ", runMethodSafe(getArrayLenMinusTwoValue, inputArray))
 	// getArrayLenMinusTwoValue(inputArray) This will fail and will stop the process
 }
 

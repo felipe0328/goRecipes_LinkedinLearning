@@ -31,7 +31,7 @@ func createFile(filename string, data interface{}) (err error) {
 	}
 
 	defer newFile.Sync()
-	newFile.Write(dataBytes)
+	_, _ = newFile.Write(dataBytes)
 
 	return
 }
