@@ -7,4 +7,5 @@ func TestBasics() {
 	testError()
 	testDefer()
 	testPanic()
+	testFilter()
 }
