@@ -6,4 +6,5 @@ func TestBasics() {
 	testFrequency()
 	testError()
 	testDefer()
+	testPanic()
 }
