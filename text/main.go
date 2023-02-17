@@ -7,4 +7,7 @@ func TestText() {
 	testGenerateReport()
 	testUnicode()
 	testInsensitive()
+	testRegex()
+	testSearching()
+	testChallenge()
 }
