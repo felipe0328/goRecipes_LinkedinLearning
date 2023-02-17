@@ -5,4 +5,6 @@ func TestTime() {
 	testMeasureTime()
 	testFormat()
 	testParsing()
+	testTimeZones()
+	testParserAndConverter()
 }
