@@ -2,7 +2,6 @@ package text
 
 import (
 	"bufio"
-	"bytes"
 	"errors"
 	"fmt"
 	"os"
@@ -21,14 +20,14 @@ func testChallenge() {
 func cmdFreq(fileName string) (map[string]int, error) {
 	result := make(map[string]int)
 
-	data, err := os.ReadFile(fileName)
+	data, err := os.Open(fileName)
 	if err != nil {
 		return result, err
 	}
 
-	buf := bytes.NewBuffer(data)
+	defer data.Close()
 
-	scanner := bufio.NewScanner(buf)
+	scanner := bufio.NewScanner(data)
 
 	for scanner.Scan() {
 		line := scanner.Text()
@@ -41,6 +40,10 @@ func cmdFreq(fileName string) (map[string]int, error) {
 
 		goFunc := matches[3]
 		result[goFunc]++
+	}
+
+	if err := scanner.Err(); err != nil {
+		return result, err
 	}
 
 	if len(result) == 0 {
