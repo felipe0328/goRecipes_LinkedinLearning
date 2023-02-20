@@ -144,7 +144,7 @@ func testImageChallenge() {
 	ic.Add(NewCircle(60, 60, 10, Blue))
 	ic.Add(NewCircle(140, 60, 10, Blue))
 	ic.Add(NewRectangle(100, 130, 80, 10, Red))
-	f, err := os.Create("face.png")
+	f, err := os.Create("structs/face.png")
 
 	if err != nil {
 		fmt.Printf("Creating the image returned an error: %s", err.Error())
