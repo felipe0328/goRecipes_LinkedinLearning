@@ -6,4 +6,5 @@ func TestStructs() {
 	fmt.Printf("---\n \nStructs\n---\n")
 	testStructs()
 	testMethods()
+	testInterfaces()
 }
