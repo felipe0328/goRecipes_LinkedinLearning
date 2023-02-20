@@ -31,7 +31,7 @@ func testInterfaces() {
 
 	allCars := carIntImpl.getCars()
 
-	fmt.Printf("We created an interface, and implemented that into a struct, creating two cars, getting the first: %v, and all the cars: %v", getFirstCar, allCars)
+	fmt.Printf("We created an interface, and implemented that into a struct, creating two cars, getting the first: %v, and all the cars: %v\n", getFirstCar, allCars)
 
 }
 
