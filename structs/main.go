@@ -9,4 +9,5 @@ func TestStructs() {
 	testInterfaces()
 	testEmptyInterfaces()
 	testIota()
+	testImageChallenge()
 }
