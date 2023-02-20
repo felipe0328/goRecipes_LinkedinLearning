@@ -7,4 +7,5 @@ func TestStructs() {
 	testStructs()
 	testMethods()
 	testInterfaces()
+	testEmptyInterfaces()
 }

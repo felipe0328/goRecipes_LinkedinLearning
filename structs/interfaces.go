@@ -5,6 +5,7 @@ import "fmt"
 // this method will show how to work with interfaces in go
 
 var cars map[int]carData
+var carIntImpl ICar // moving the creation of this variable outside the method to avoid any kind of problem warnings
 
 type carData struct {
 	id   int
@@ -21,7 +22,6 @@ type carImplementation struct{}
 
 func testInterfaces() {
 	cars = make(map[int]carData)
-	var carIntImpl ICar
 	carIntImpl = &carImplementation{}
 
 	firstCar := carIntImpl.createNewCar("testCar")
