@@ -8,4 +8,5 @@ func TestStructs() {
 	testMethods()
 	testInterfaces()
 	testEmptyInterfaces()
+	testIota()
 }
