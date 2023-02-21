@@ -96,10 +96,7 @@ func getUSDValueForDay(date time.Time, ch chan<- Meta) {
 		return
 	}
 
-	dateFormatted := date.Format("01/02/2006")
-
 	metaData = responseData.Chart.Result[0].Meta
-	fmt.Println(dateFormatted, date.Unix(), metaData.RegularMarketPrice)
 }
 
 // https://query1.finance.yahoo.com/v8/finance/chart/COP=X?date=02/10/2023&interval=1d
